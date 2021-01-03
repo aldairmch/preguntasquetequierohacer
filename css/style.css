@@ -1,0 +1,142 @@
+body
+{
+    background-color: #d3f2eb;
+    margin: 0;
+}
+
+.headprincipal
+{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    display: inline-block;
+}
+
+.texto1
+{
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+h1
+{
+    margin-top: 120px;
+    font-size: 60px;
+}
+
+p
+{
+    margin-top: 100px;
+}
+.flip-container {
+    perspective: 1000;
+    border: 1px solid #d9d9d9;
+    /* Para Firefox - IE10+ debemos agregar propiedades extras */
+    -moz-transform-style: preserve-3d;
+    -moz-transform: perspective(1000px);
+    -ms-transform-style: preserve-3d;
+    -ms-transform: perspective(1000px);
+  }
+   
+  .flip-container, .front, .back {
+    width: 360px;
+    height: 520px;
+  }
+   
+  /* preserve-3d: Indicamos que todo elemento hijo del div flipper estara en un espacio 3D XYZ  */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+   
+  .front, .back {
+    /* Backface: Nos permite ocultar la parte posterior de los elementos html */
+    /* en este caso FRONT - BACK */
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+   
+  /* FRONT: eje Y = 0   */
+  .front {
+    transform: rotateY(0deg);
+    background: #bcea67;
+  }
+   
+  /* BACK: eje Y = -180, se mantendra oculto */
+  .back {
+    transform: rotateY(-180deg);
+    background: #f4c7f2;
+  }
+
+  /* Hover */
+.flip-container:hover .front {
+    transform: rotateY(180deg);
+  }
+  .flip-container:hover .back {
+    transform: rotateY(0deg);
+  }
+  /* Toggle - Moviles */
+  .flip-container.hover .front {
+    transform: rotateY(180deg);
+  }
+  .flip-container.hover .back {
+    transform: rotateY(0deg);
+  }
+
+  .container
+  {
+    font-size: 0;
+  }
+
+  .section {
+    font-size: 16px; /*reset font size*/
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3333%;
+    /*border: 1px solid;*/
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 320px)
+  {
+    .headprincipal
+    {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .texto1
+    {
+    position: absolute;
+    top: 45px;
+    left: 19%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    }
+
+    .flip-container, .front, .back 
+    {
+        width: 320px;
+        height: 480px;
+    }
+
+    p
+    {
+    margin-top: 25px;
+    }
+
+    .section {
+        display: block;
+        width: auto;
+      }
+  }
