@@ -110,7 +110,7 @@ p
     .headprincipal
     {
         width: 100%;
-        height: 120px;
+        height: 90px;
         position: relative;
         display: inline-block;
     }
@@ -132,7 +132,7 @@ p
 
     p
     {
-    margin-top: 25px;
+    margin-top: 15px;
     }
 
     .section {
