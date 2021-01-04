@@ -105,12 +105,12 @@ p
     box-sizing: border-box;
   }
 
-  @media (max-width: 320px)
+  @media (max-width: 640px)
   {
     .headprincipal
     {
         width: 100%;
-        height: 80px;
+        height: 120px;
         position: relative;
         display: inline-block;
     }
@@ -118,10 +118,10 @@ p
     .texto1
     {
     position: absolute;
-    top: 45px;
+    top: 8px;
     left: 19%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 10px;
     }
 
     .flip-container, .front, .back 
@@ -136,7 +136,7 @@ p
     }
 
     .section {
-        display: block;
+        display: inline-block;
         width: auto;
       }
   }
