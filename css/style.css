@@ -134,9 +134,10 @@ p
     {
     margin-top: 15px;
     }
-
+      
     .section {
-        display: inline-block;
-        width: auto;
-      }
+
+    display: block;
+    width: 100%;
+    }
   }
