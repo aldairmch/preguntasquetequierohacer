@@ -118,10 +118,10 @@ p
     .texto1
     {
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 15%;
+    left: 15%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
+    font-size: 22px;
     }
 
     .flip-container, .front, .back 
@@ -192,10 +192,10 @@ p
     .texto1
     {
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 15%;
+    left: 15%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
+    font-size: 24px;
     }
 
     .flip-container, .front, .back 
