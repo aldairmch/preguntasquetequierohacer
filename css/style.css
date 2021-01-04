@@ -105,7 +105,7 @@ p
     box-sizing: border-box;
   }
 
-  @media (max-width: 360px)
+  @media (max-width: 375px)
   {
     .headprincipal
     {
@@ -118,8 +118,8 @@ p
     .texto1
     {
     position: absolute;
-    top: 8px;
-    left: 19%;
+    top: 5%;
+    left: 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10px;
     }
